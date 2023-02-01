@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(360deg, #ff0f7b ,#f89b29);
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+label{
+    display: block;
+    padding-bottom: 10px;
+}
+
+.class{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    /* background: white; */
+}
+ 
+.class,h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.class, #Initial-price, #stock-quantity, #Current-price{
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+   
+}
+
+
