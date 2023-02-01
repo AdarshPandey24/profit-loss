@@ -19,7 +19,7 @@ function CalculateProfitandLoss(initialPrice,stockQuantity,currentPrice) {
     if(initialPrice > currentPrice)
     {
         var loss = (initialPrice - currentPrice) * stockQuantity;
-        var lossPercent = ((loss)/initialPrice) * 100;
+        var lossPercent = ((initialPrice - currentPrice)/initialPrice) * 100;
 
         Showoutput(`your loss is of ${loss} and the loss percentage is ${lossPercent}%`);
 
@@ -27,7 +27,7 @@ function CalculateProfitandLoss(initialPrice,stockQuantity,currentPrice) {
     else if(currentPrice > initialPrice)
     {
         var profit = (currentPrice-initialPrice) * stockQuantity;
-        var profitpercent= ((profit)/initialPrice) * 100;
+        var profitpercent= ((currentPrice-initialPrice)/initialPrice) * 100;
         Showoutput(`your profit is of ${profit} and the profit percentage is ${profitpercent} %`); 
     }
     else
